@@ -9,9 +9,10 @@
     "prettier/prettier": [
       "error",
       {
-        "singleQuote": false,
+        "singleQuote": true,
         "trailingComma": "all",
-        "printWidth": 80
+        "printWidth": 80,
+        "semi": "off"
       }
     ]
   }
