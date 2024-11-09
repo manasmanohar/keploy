@@ -1,13 +1,13 @@
-"use client"
+'use client'
 
-import { useState } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
-import { navConfig } from "config/navConfig"
-import { siteConfig } from "config/site"
-import { Menu, X } from "lucide-react"
+import { useState } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
+import { navConfig } from 'config/navConfig'
+import { siteConfig } from 'config/site'
+import { Menu, X } from 'lucide-react'
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
@@ -48,10 +48,10 @@ export function MobileNav() {
                     key={item.title}
                     href={item.href}
                     className={cn(
-                      "flex items-center rounded-lg px-3 py-2 text-lg text-foreground transition hover:bg-foreground/10 hover:text-foreground",
+                      'flex items-center rounded-lg px-3 py-2 text-lg text-foreground transition hover:bg-foreground/10 hover:text-foreground',
                       pathname === item.href
-                        ? "text-foreground"
-                        : "text-foreground/60",
+                        ? 'text-foreground'
+                        : 'text-foreground/60',
                     )}
                   >
                     {item.title}

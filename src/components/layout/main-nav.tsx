@@ -1,17 +1,17 @@
-"use client"
+'use client'
 
-import * as React from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import * as React from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
-import { cn } from "@/lib/utils"
-import { navConfig, navDropdown } from "config/navConfig"
+} from '@/components/ui/navigation-menu'
+import { cn } from '@/lib/utils'
+import { navConfig, navDropdown } from 'config/navConfig'
 
 export function MainNav() {
   const pathname = usePathname()
@@ -22,8 +22,8 @@ export function MainNav() {
           key={item.title}
           href={item.href}
           className={cn(
-            "flex items-center rounded-full px-4 py-2 transition-colors hover:scale-105 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            pathname === item.href ? "text-foreground" : "text-foreground/60",
+            'flex items-center rounded-full px-4 py-2 transition-colors hover:scale-105 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+            pathname === item.href ? 'text-foreground' : 'text-foreground/60',
           )}
         >
           {item.title}
@@ -36,10 +36,10 @@ export function MainNav() {
             <NavigationMenuItem key={dropdown.title}>
               <NavigationMenuTrigger
                 className={cn(
-                  "flex-shrink-0 rounded-full transition-colors hover:scale-105 hover:text-foreground/80",
+                  'flex-shrink-0 rounded-full transition-colors hover:scale-105 hover:text-foreground/80',
                   pathname === dropdown.title
-                    ? "text-foreground"
-                    : "text-foreground/60",
+                    ? 'text-foreground'
+                    : 'text-foreground/60',
                 )}
               >
                 <p> {dropdown.title}</p>
@@ -52,7 +52,7 @@ export function MainNav() {
                       href={item.href}
                       title={item.title}
                       className={cn(
-                        "block transform rounded-md px-2 py-1 transition-all duration-300 hover:scale-105 hover:bg-accent hover:text-accent-foreground hover:shadow-md focus:bg-accent focus:text-accent-foreground",
+                        'block transform rounded-md px-2 py-1 transition-all duration-300 hover:scale-105 hover:bg-accent hover:text-accent-foreground hover:shadow-md focus:bg-accent focus:text-accent-foreground',
                       )}
                     >
                       {item.title}
