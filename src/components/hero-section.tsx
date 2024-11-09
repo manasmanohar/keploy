@@ -1,6 +1,6 @@
-import { siteConfig } from "config/site"
+import { siteConfig } from 'config/site'
 
-import { Button } from "./ui/button"
+import { Button } from './ui/button'
 
 export function HeroSection() {
   const {

@@ -1,9 +1,9 @@
-import Link from "next/link"
-import { Icons } from "@/components/icons"
+import Link from 'next/link'
+import { Icons } from '@/components/icons'
 
-import { Button } from "../ui/button"
-import { MainNav } from "./main-nav"
-import { MobileNav } from "./mobile-nav"
+import { Button } from '../ui/button'
+import { MainNav } from './main-nav'
+import { MobileNav } from './mobile-nav'
 
 export function SiteHeader() {
   return (

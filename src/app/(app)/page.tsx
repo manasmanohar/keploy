@@ -1,6 +1,6 @@
-import { ClientLogos } from "@/components/common/client-logos"
-import { PartnerLogos } from "@/components/common/partner-logos"
-import { HeroSection } from "@/components/hero-section"
+import { ClientLogos } from '@/components/common/client-logos'
+import { PartnerLogos } from '@/components/common/partner-logos'
+import { HeroSection } from '@/components/hero-section'
 
 export default function Home() {
   return (

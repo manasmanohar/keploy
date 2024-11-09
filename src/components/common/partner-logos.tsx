@@ -1,16 +1,16 @@
-import Image from "next/image"
+import Image from 'next/image'
 
 const organizations = [
-  { alt: "Google Summer of Code", src: "/images/logos/organizations/gsoc.svg" },
+  { alt: 'Google Summer of Code', src: '/images/logos/organizations/gsoc.svg' },
   {
-    alt: "Cloud Native Computing Foundation",
-    src: "/images/logos/organizations/cncf.svg",
+    alt: 'Cloud Native Computing Foundation',
+    src: '/images/logos/organizations/cncf.svg',
   },
   {
-    alt: "Google for Startups",
-    src: "/images/logos/organizations/googleForStartups.svg",
+    alt: 'Google for Startups',
+    src: '/images/logos/organizations/googleForStartups.svg',
   },
-  { alt: "G2 Reviews", src: "/images/logos/organizations/g2reviews.svg" },
+  { alt: 'G2 Reviews', src: '/images/logos/organizations/g2reviews.svg' },
 ]
 
 const Logo = ({ src, alt }: { src: string; alt: string }) => (
