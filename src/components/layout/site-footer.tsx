@@ -1,12 +1,57 @@
+import Link from 'next/link'
+import { footerConfig } from 'config/footer'
+
+import { Container } from '../container'
+import { Icons, type IconKey } from '../icons'
+
 export function SiteFooter() {
   return (
-    <footer className="w-full border-t border-border/40 bg-background px-8 dark:border-border lg:px-24">
-      <footer className="w-full border-t border-border/40 bg-background dark:border-border"></footer>
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center py-2 md:flex-row">
-        <p className="text-center text-sm leading-loose text-muted-foreground">
-          &copy; Keploy Inc {new Date().getFullYear()}. All rights reserved.
-        </p>
-      </div>
-    </footer>
+    <Container className="bg-background">
+      <footer className="border-t lg:mx-4">
+        <div className="mx-auto max-w-screen-xl px-4 pt-8 sm:px-6 lg:-mx-4 lg:px-8">
+          <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
+            {footerConfig.columns.map((column, index) => (
+              <div key={index} className="space-y-4">
+                <h3 className="text-base font-medium">{column.title}</h3>
+                <ul className="space-y-3">
+                  {column.links.map((link, linkIndex) => (
+                    <li key={linkIndex}>
+                      <Link
+                        href={link.href}
+                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        {link.text}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+            <div className="flex gap-4">
+              {footerConfig.socialLinks.map((social) => {
+                const Icon = Icons[social.icon as IconKey]
+                return Icon ? (
+                  <Link
+                    key={social.name}
+                    href={social.href}
+                    className="text-muted-foreground transition-colors hover:text-foreground"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon className="h-3 w-3" />
+                    <span className="sr-only">{social.name}</span>
+                  </Link>
+                ) : null
+              })}
+            </div>
+          </div>
+        </div>
+        <div className="my-8 flex w-full flex-col items-center justify-between border-t pt-4 sm:flex-row">
+          <p className="p-4 text-sm text-muted-foreground">
+            {footerConfig.copyright}
+          </p>
+        </div>
+      </footer>
+    </Container>
   )
 }

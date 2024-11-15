@@ -8,9 +8,11 @@ export interface NavDropdown {
 }
 
 export const navConfig: NavLink[] = [
-  { title: 'Community', href: '/community' },
   { title: 'Docs', href: '/docs' },
   { title: 'Pricing', href: '/pricing' },
+  { title: 'Events', href: '/devscribe' },
+  { title: 'Customers', href: '/customers' },
+  { title: 'Community', href: '/community' },
 ]
 export const navDropdown: NavDropdown[] = [
   {

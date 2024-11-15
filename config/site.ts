@@ -14,11 +14,11 @@ export const siteConfig = {
   },
   githubStars: 5000,
   heroSection: {
-    mainHeading: 'Automate your API Tests ',
-    minutesLabel: 'in minutes',
+    mainHeading:
+      'The modern open-source API testing platform that writes tests for you.',
     subHeading: 'Save time, reduce errors, and scale faster',
     description1:
-      'Open-source platform for API testing with AI-driven test generation.',
+      'Record real API traffic  to generate intelligent test suites* with built-in mocks , running anywhere without dependencies.',
     primaryButton: {
       name: 'Get Started',
       href: 'https://marketplace.visualstudio.com/items?itemName=Keploy.keployio',

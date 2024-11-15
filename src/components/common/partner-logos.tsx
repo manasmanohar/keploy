@@ -10,7 +10,7 @@ const organizations = [
     alt: 'Google for Startups',
     src: '/images/logos/organizations/googleForStartups.svg',
   },
-  { alt: 'G2 Reviews', src: '/images/logos/organizations/g2reviews.svg' },
+  { alt: 'G2 Reviews', src: '/images/logos/organizations/g2Reviews.svg' },
 ]
 
 const Logo = ({ src, alt }: { src: string; alt: string }) => (
@@ -28,8 +28,11 @@ const Logo = ({ src, alt }: { src: string; alt: string }) => (
 
 export function PartnerLogos() {
   return (
-    <section className="flex w-full flex-col items-center justify-center py-4">
-      <div className="grid grid-cols-2 gap-x-2 md:grid-cols-4 md:gap-4">
+    <section className="my-4 flex w-full flex-col items-center justify-center">
+      {/* <p className="font-semi my-2 text-center text-lg text-muted-foreground lg:text-xl">
+        Backed by Industry Leaders
+      </p> */}
+      <div className="grid w-full grid-cols-2 gap-x-2 md:grid-cols-4 md:gap-4">
         {organizations.map(({ src, alt }) => (
           <Logo key={alt} src={src} alt={alt} />
         ))}

@@ -6,42 +6,33 @@ import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { navConfig } from 'config/navConfig'
-import { siteConfig } from 'config/site'
 import { Menu, X } from 'lucide-react'
 
-export function MobileNav() {
+import { ConsoleButton } from '../console-button'
+
+interface MobileNavProps {
+  className?: string
+}
+
+export function MobileNav(className: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => setIsOpen((prev) => !prev)
   const pathname = usePathname()
 
   return (
-    <div className="lg:hidden">
+    <div className={cn('lg:hidden', className)}>
       <Button
         variant="ghost"
-        className="text-md rounded-full p-4"
+        className="rounded-lg p-4 text-3xl"
         onClick={toggleMenu}
       >
         {isOpen ? <X /> : <Menu />}
       </Button>
 
       {isOpen && (
-        <div className="fixed inset-x-0 z-40 mt-4 h-screen w-screen bg-background backdrop-blur-lg">
-          <div className="h-full border bg-background backdrop-blur-sm">
-            <div className="flex flex-col gap-5 space-y-4 py-6">
-              <div className="flex flex-row justify-end gap-4 px-4">
-                {siteConfig.headerCta.map((button) => (
-                  <Button
-                    asChild
-                    key={button.name}
-                    variant="outline"
-                    className="text-md rounded-3xl p-4"
-                    onClick={toggleMenu}
-                  >
-                    <Link href={button.href}>{button.name}</Link>
-                  </Button>
-                ))}
-              </div>
-
+        <div className="fixed inset-x-0 z-40 mt-[1rem] h-screen w-full backdrop-blur-lg">
+          <div className="h-full bg-background backdrop-blur-sm">
+            <div className="flex justify-between gap-5 space-y-4 py-6">
               <div className="flex flex-col gap-4 px-4">
                 {navConfig.map((item) => (
                   <Link
@@ -58,6 +49,7 @@ export function MobileNav() {
                   </Link>
                 ))}
               </div>
+              <ConsoleButton />
             </div>
           </div>
         </div>

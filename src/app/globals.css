@@ -10,12 +10,36 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .text-responsive-4xl {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  .text-responsive-3xl {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
 }
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --gradient-background: linear-gradient(
+      180deg,
+      hsl(0 0% 100%) 0%,
+      hsl(0 0% 98%) 100%
+    );
+    --gradient-surface: linear-gradient(
+      180deg,
+      hsl(0 0% 100%) 0%,
+      hsl(0 0% 99%) 100%
+    );
+
+    --background: 50 60% 97%;
     --foreground: 0 0% 3.9%;
+    /*
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%; */
+
+    --mascotOrange: 22.92, 100%, 65.1%;
+    --darkBlue: 218.36, 100%, 11.96%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
@@ -41,8 +65,21 @@ body {
     --radius: 0.5rem;
   }
   .dark {
+    --gradient-background: linear-gradient(
+      180deg,
+      hsl(0 0% 3.9%) 0%,
+      hsl(0 0% 2%) 100%
+    );
+    --gradient-surface: linear-gradient(
+      180deg,
+      hsl(0 0% 3.9%) 0%,
+      hsl(0 0% 2%) 100%
+    );
+
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
+    --mascotOrange: hsl(22.92, 100%, 45%);
+
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
@@ -75,4 +112,38 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+@layer components {
+  .section-container {
+    @apply mx-auto w-full max-w-7xl px-4 lg:px-0;
+  }
+
+  .text-gradient {
+    @apply to-primary-hover bg-gradient-to-r from-primary bg-clip-text text-transparent;
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.h1 {
+  @apply text-5xl font-bold leading-[1.1] tracking-tight md:text-6xl lg:text-7xl;
+}
+.h2 {
+  @apply text-3xl font-semibold tracking-tight md:text-4xl lg:text-5xl;
+}
+.body-large {
+  @apply text-lg leading-relaxed md:text-xl;
+}
+.section-spacing {
+  @apply my-16 md:my-24 lg:my-32;
+}
+
+.section-spacing {
+  @apply my-16 md:my-24 lg:my-32;
+}
+
+.content-grid {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
 }
