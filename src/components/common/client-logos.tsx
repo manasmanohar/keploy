@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Marquee from 'react-fast-marquee'
 
 const companies = [
-  { alt: 'InstaAstro', src: '/images/logos/companies/instaastro-logo.svg' },
   { alt: 'LambdaTest', src: '/images/logos/companies/lambdatest-logo.png' },
   { alt: 'Edureka', src: '/images/logos/companies/edureka-logo.png' },
   { alt: 'Nutanix', src: '/images/logos/companies/nutanix-logo.svg' },
@@ -18,6 +17,8 @@ const companies = [
   { alt: 'Leadsquare', src: '/images/logos/companies/leadsquare-logo.png' },
   { alt: 'Pixis', src: '/images/logos/companies/pixis-logo.png' },
   { alt: 'Wednesday', src: '/images/logos/companies/wednesday-logo.svg' },
+  // todo: fix below logo not rendering in production
+  // { alt: 'InstaAstro', src: '/images/logos/companies/instaastro-logo.svg' },
 ]
 
 export function ClientLogos() {
@@ -27,7 +28,8 @@ export function ClientLogos() {
         Trusted by startups to Fortune 500s developer teams
       </p>
       <div className="relative min-h-[7rem]">
-        <Marquee speed={20} gradient={true} gradientColor="background">
+        // todo: pass dynamic bg-color to marquee
+        <Marquee speed={20} gradient={true} gradientColor="#fcfaf3">
           {companies.map((companies) => (
             <div key={companies.alt} className="mx-8 flex-shrink-0">
               <Image
