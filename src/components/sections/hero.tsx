@@ -17,7 +17,7 @@ export function HeroSection() {
     <section>
       <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
       <AnimatedEntrance delay={0}>
-        <div className="lg:mt-18 mt-12 flex flex-col items-center justify-center gap-2 font-heading md:mt-24">
+        <div className="mt-12 flex flex-col items-center justify-center gap-2 font-heading lg:mt-12">
           <div className="relative flex max-w-screen-lg flex-col items-center justify-center px-4 text-center">
             <div className="w-full">
               <h1 className="text-balance font-heading text-foreground">
