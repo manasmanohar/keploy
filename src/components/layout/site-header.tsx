@@ -13,12 +13,12 @@ export function SiteHeader() {
       <div className="absolute -top-3 -z-10 w-full p-4 backdrop-blur supports-[backdrop-filter]:bg-background/85" />
       <Container>
         <div className="flex h-[3rem] items-center justify-between rounded-[1rem] border-[0.1rem] bg-background/95 p-[1.6rem] px-[0.8rem] backdrop-blur supports-[backdrop-filter]:bg-background/85 md:h-[3rem]">
-          <div className="mr-6">
+          <div className="mr-2">
             <Link href="/" className="flex items-center">
               <Icons.logo className="h-[2.5rem] w-auto md:h-[3rem]" />
             </Link>
           </div>
-          <MainNav className="hidden w-full items-center gap-2 px-4 text-[1.15rem] font-semibold text-foreground/10 lg:inline-flex lg:justify-between" />
+          <MainNav className="hidden w-full items-center gap-2 px-2 text-[1rem] font-semibold text-foreground/5 lg:justify-between xl:inline-flex" />
           <div className="ml-4 flex items-center gap-4">
             <GitHubButton className="hidden sm:flex" />
             <ConsoleButton className="hidden lg:flex" />
