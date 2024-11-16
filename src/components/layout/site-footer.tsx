@@ -38,7 +38,7 @@ export function SiteFooter() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Icon className="md:h-8 md:w-8" />
+                    <Icon className="md:h-6 md:w-6" />
                     <span className="sr-only">{social.name}</span>
                   </Link>
                 ) : null

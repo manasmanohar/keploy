@@ -6,15 +6,15 @@ export const footerConfig = {
       links: [
         {
           text: 'Documentation',
-          href: 'https://docs.keploy.io',
+          href: '/',
         },
         {
           text: 'Tech Blog',
-          href: '/blog',
+          href: '/',
         },
         {
           text: 'Community Blog',
-          href: '/community/blog',
+          href: '/',
         },
         {
           text: 'Sitemap',
@@ -31,15 +31,15 @@ export const footerConfig = {
         },
         {
           text: 'Security',
-          href: '/security',
+          href: '/',
         },
         {
           text: 'Privacy Policy',
-          href: '/privacy',
+          href: '/',
         },
         {
           text: 'Terms of Service',
-          href: '/tos',
+          href: '/',
         },
       ],
     },
