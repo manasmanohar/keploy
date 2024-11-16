@@ -8,7 +8,7 @@ export function Community() {
   return (
     <section className="my-32 flex flex-col items-start gap-8 rounded-xl border-[0.1rem] bg-background p-4 px-4 text-start sm:p-6 lg:items-center lg:p-20 lg:text-center">
       <SectionHeading subtext="Get support from our experts">
-        Join our community
+        Join the community
       </SectionHeading>
 
       <CTA

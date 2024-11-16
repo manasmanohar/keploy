@@ -44,7 +44,7 @@ export function GitHubButton({
             variant="outline"
             size="sm"
             className={cn(
-              'h-[3rem] w-[7rem] rounded-xl font-heading',
+              'h-[2.5rem] w-[5.5rem] rounded-xl font-heading',
               className,
             )}
             asChild

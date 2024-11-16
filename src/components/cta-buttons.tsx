@@ -25,7 +25,7 @@ const CTAButton = ({
   variant = 'primary',
 }: CTAButtonProps) => (
   <Button variant={variant} size="xl" asChild>
-    <Link href={href} className="flex items-center gap-2">
+    <Link href={href} target="_blank" className="flex items-center gap-2">
       {Icon && iconPosition === 'left' && <Icon className="h-5 w-5" />}
       {text}
       {Icon && iconPosition === 'right' && <Icon className="h-5 w-5" />}

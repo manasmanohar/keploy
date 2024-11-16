@@ -1,11 +1,19 @@
 export const companyTestimonials = [
   {
     quote:
-      'I was able to integrate and test the application within 30 minutes. Works well with existing test generation libraries and test cases. The UI is quite user-friendly.',
-    name: 'Mahesh G',
+      "It's just plug and play and you get automated tests out of the box in your routine development flow. I specifically like the deduplication feature the most!",
+    name: 'Mohammed Ali C',
+    userImage: '/images/logos/company-testimonials/wednesday.webp',
+    title: 'CTO',
+    companyName: 'Wednesday',
+  },
+  {
+    quote:
+      'Keploy team provided exceptional support and remained highly proactive throughout the entire experience. Keploy platform has added business value to Maruti Suzuki.',
+    name: 'Raman CV',
     userImage: '/images/logos/company-testimonials/maruti.webp',
-    title: 'Senior Software Engineer',
-    companyName: '',
+    title: 'Executive Member',
+    companyName: 'Maruti Suzuki',
   },
   {
     quote:
@@ -17,11 +25,11 @@ export const companyTestimonials = [
   },
   {
     quote:
-      "It's just plug and play and you get automated tests out of the box in your routine development flow. I specifically like the deduplication feature the most!",
-    name: 'Mohammed Ali C',
-    userImage: '/images/logos/company-testimonials/wednesday.webp',
-    title: 'CTO',
-    companyName: 'Wednesday',
+      'I was able to integrate and test the application within 30 minutes. Works well with existing test generation libraries and test cases. The UI is quite user-friendly.',
+    name: 'Mahesh G',
+    userImage: '/images/logos/company-testimonials/maruti.webp',
+    title: 'Senior Software Engineer',
+    companyName: '',
   },
   {
     quote:
@@ -30,14 +38,6 @@ export const companyTestimonials = [
     userImage: '/images/logos/company-testimonials/wednesday.webp',
     title: 'Senior Software Engineer',
     companyName: 'Wednesday',
-  },
-  {
-    quote:
-      'Keploy team provided exceptional support and remained highly proactive throughout the entire experience. Keploy platform has added business value to Maruti Suzuki.',
-    name: 'Raman CV',
-    userImage: '/images/logos/company-testimonials/maruti.webp',
-    title: 'Executive Member',
-    companyName: 'Maruti Suzuki',
   },
 
   {

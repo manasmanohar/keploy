@@ -41,7 +41,7 @@ export function FeatureCard({
           <h3 className="text-2xl font-semibold transition-colors">{title}</h3>
           <p className="mt-2 text-xl leading-relaxed text-muted-foreground">
             {description}
-          </p>{' '}
+          </p>
           {actionText && (
             <div className="mt-auto pt-6">
               <p className="font-medium text-primary opacity-0 transition-all duration-300 group-hover:opacity-100">

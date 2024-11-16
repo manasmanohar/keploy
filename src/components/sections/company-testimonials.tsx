@@ -44,13 +44,13 @@ export function CompanyTestimonials({
           >
             <div className="group h-full rounded-lg transition-all duration-300 hover:bg-muted/50">
               <div className="flex h-full flex-col rounded-xl border-[0.1rem] border-muted-foreground/20 bg-background p-6">
-                <div className="flex gap-4">
+                <div className="flex grow-0 gap-4">
                   <Image
                     src={testimonial.userImage}
                     width={48}
                     height={48}
                     alt={testimonial.companyName}
-                    className="rounded-xl border-[0.2rem] bg-muted-foreground/10"
+                    className="h-14 w-14 rounded-xl border-[0.2rem] bg-muted-foreground/10"
                   />
                   <div className="flex flex-col">
                     <p className="text-lg font-semibold text-foreground/80">

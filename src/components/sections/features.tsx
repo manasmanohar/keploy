@@ -9,10 +9,10 @@ export function FeatureSection() {
   return (
     <section className="flex flex-col gap-8">
       <SectionHeading
-        subtext="From test generation to dependency mocking, everything you need for
-          reliable API testing"
+        subtext="Empower your team with end-to-end automation that turns testing challenges into advantages.
+"
       >
-        End-to-End Test Automation
+        Enterprise API Testing, Automated
       </SectionHeading>
 
       <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">

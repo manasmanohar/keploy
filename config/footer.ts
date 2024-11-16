@@ -37,6 +37,10 @@ export const footerConfig = {
           text: 'Privacy Policy',
           href: '/privacy',
         },
+        {
+          text: 'Terms of Service',
+          href: '/tos',
+        },
       ],
     },
     {

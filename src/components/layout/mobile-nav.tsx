@@ -23,17 +23,17 @@ export function MobileNav(className: MobileNavProps) {
     <div className={cn('lg:hidden', className)}>
       <Button
         variant="ghost"
-        className="rounded-lg p-4 text-3xl"
+        className="rounded-lg bg-background p-4 text-3xl"
         onClick={toggleMenu}
       >
         {isOpen ? <X /> : <Menu />}
       </Button>
 
       {isOpen && (
-        <div className="fixed inset-x-0 z-40 mt-[1rem] h-screen w-full backdrop-blur-lg">
+        <div className="fixed inset-x-0 z-40 mt-[0.4rem] h-screen w-full backdrop-blur supports-[backdrop-filter]:bg-background/85 lg:mt-[0.1rem]">
           <div className="h-full bg-background backdrop-blur-sm">
-            <div className="flex justify-between gap-5 space-y-4 py-6">
-              <div className="flex flex-col gap-4 px-4">
+            <div className="flex flex-col justify-between gap-2 space-y-4 px-4 py-6">
+              <div className="flex flex-col gap-2">
                 {navConfig.map((item) => (
                   <Link
                     key={item.title}
@@ -49,7 +49,7 @@ export function MobileNav(className: MobileNavProps) {
                   </Link>
                 ))}
               </div>
-              <ConsoleButton />
+              <ConsoleButton className="ml-3" />
             </div>
           </div>
         </div>

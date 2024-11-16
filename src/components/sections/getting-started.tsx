@@ -2,7 +2,9 @@
 
 import { CodeBlock } from '@/components/ui/code-block'
 import { gettingStartedConfig } from 'config/gettingStarted'
+import { ChevronRight } from 'lucide-react'
 
+import { CTA } from '../cta-buttons'
 import { AnimatedEntrance } from '../ui/animated-entrance'
 import { SectionHeading } from '../ui/heading'
 import { Section } from '../ui/section'
@@ -13,7 +15,6 @@ export function GettingStarted() {
       <SectionHeading subtext={gettingStartedConfig.subtitle}>
         {gettingStartedConfig.title}
       </SectionHeading>
-
       <div className="my-16 space-y-8">
         {gettingStartedConfig.steps.map((step) => (
           <AnimatedEntrance key={step.id} delay={step.id * 0.1}>
@@ -30,7 +31,20 @@ export function GettingStarted() {
               <CodeBlock code={step.code} language={step.codeLanguage} />
             </div>
           </AnimatedEntrance>
-        ))}
+        ))}{' '}
+        <CTA
+          primary={{
+            text: 'Get Started',
+            href: '/getting-started',
+          }}
+          secondary={{
+            text: 'Docs',
+            href: '/docs',
+            icon: ChevronRight,
+            iconPosition: 'right',
+          }}
+          className="my-2 ml-6 max-w-[145px] text-start sm:max-w-xs sm:flex-row"
+        />
       </div>
     </Section>
   )

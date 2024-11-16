@@ -12,13 +12,13 @@ export function ConsoleButton({ className }: ConsoleButtonProps) {
       variant="primary"
       size="sm"
       className={cn(
-        'max-w- h-[3rem] w-[7rem] rounded-xl font-heading',
+        'text-md h-[2.4rem] w-[7.2rem] rounded-xl font-heading',
         className,
       )}
       asChild
     >
       <Link href="https://app.keploy.io">
-        <span> Console</span>
+        <span> Get started</span>
       </Link>
     </Button>
   )

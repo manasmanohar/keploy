@@ -22,6 +22,7 @@ export const siteConfig = {
     primaryButton: {
       name: 'Get Started',
       href: 'https://marketplace.visualstudio.com/items?itemName=Keploy.keployio',
+      target: '_blank',
     },
     secondaryButton: {
       name: 'Open Console',

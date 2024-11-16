@@ -6,7 +6,7 @@ import { SectionHeading } from '../ui/heading'
 
 export function TestChallenge() {
   return (
-    <section className="my-32 flex flex-col gap-8">
+    <section className="my-32 flex flex-col gap-8 bg-background">
       <SectionHeading subtext={challengeConfig.subtitle}>
         {challengeConfig.title}
       </SectionHeading>

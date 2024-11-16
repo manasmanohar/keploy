@@ -10,7 +10,7 @@ const buttonVariants = cva(
       variant: {
         // custom cta button vaiants: primary and secondary
         primary:
-          'bg-foreground text-background  hover:scale-105 transition-all duration-300 ',
+          'bg-foreground text-background  hover:scale-105 transition-all duration-300 rounded-xl ',
         secondary:
           'text-foreground hover:bg-muted-foreground/20 hover:scale-105 transition-all duration-300 ',
         default: 'bg-primary text-primary-foreground hover:bg-primary/90',
@@ -25,11 +25,11 @@ const buttonVariants = cva(
       },
       size: {
         default: 'h-10 px-4 py-2',
-        sm: 'h-14 rounded-xl px-3',
-        lg: 'h-14 rounded-xl px-8',
+        sm: 'h-10 rounded-xl px-3',
+        lg: 'h-10 rounded-xl px-8',
         icon: 'h-10 w-10',
         // custom size
-        xl: ' rounded-2xl text-lg  p-2 px-6 lg:px-8 lg:h-[48px]   lg:text-[1.25rem] font-bold leading-[-2px]',
+        xl: ' rounded-2xl text-lg  p-2 px-6 lg:px-6 lg:h-[38px]   lg:text-[1.25rem] font-bold leading-[-2px]',
         github: 'h-24 w-auto py-2',
       },
     },

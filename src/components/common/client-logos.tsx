@@ -28,7 +28,7 @@ export function ClientLogos() {
         Trusted by startups to Fortune 500s developer teams
       </p>
       <div className="relative min-h-[7rem]">
-        // todo: pass dynamic bg-color to marquee
+        {/* todo: pass dynamic bg-color to marquee */}
         <Marquee speed={20} gradient={true} gradientColor="#fcfaf3">
           {companies.map((companies) => (
             <div key={companies.alt} className="mx-8 flex-shrink-0">

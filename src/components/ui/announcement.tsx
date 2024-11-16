@@ -13,8 +13,8 @@ export function Announcement({
   href,
 }: AnnouncementProps) {
   return (
-    <div className="my-6">
-      <div className="hover:scale-102 mx-auto flex transform items-center gap-2 rounded-full border-[0.1rem] border-orange-500 px-6 py-2 font-heading text-sm font-medium duration-300 hover:border-mascotOrange hover:shadow-md hover:shadow-mascotOrange md:text-primary">
+    <div className="my-4">
+      <div className="hover:scale-102 md: mx-auto flex transform items-center gap-2 rounded-full border-[0.1rem] border-orange-500 p-[0.1rem] px-4 font-heading text-sm font-medium duration-300 hover:border-mascotOrange hover:shadow-md hover:shadow-mascotOrange md:p-[0.2rem] md:px-8 md:text-primary">
         <Link
           href={href}
           target="_blank"

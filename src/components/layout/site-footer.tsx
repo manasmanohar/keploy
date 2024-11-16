@@ -18,7 +18,7 @@ export function SiteFooter() {
                     <li key={linkIndex}>
                       <Link
                         href={link.href}
-                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                        className="text-muted-foreground transition-colors hover:text-foreground md:text-lg"
                       >
                         {link.text}
                       </Link>
@@ -27,7 +27,7 @@ export function SiteFooter() {
                 </ul>
               </div>
             ))}
-            <div className="flex gap-4">
+            <div className="flex items-end gap-8">
               {footerConfig.socialLinks.map((social) => {
                 const Icon = Icons[social.icon as IconKey]
                 return Icon ? (
@@ -38,7 +38,7 @@ export function SiteFooter() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Icon className="h-3 w-3" />
+                    <Icon className="md:h-8 md:w-8" />
                     <span className="sr-only">{social.name}</span>
                   </Link>
                 ) : null
